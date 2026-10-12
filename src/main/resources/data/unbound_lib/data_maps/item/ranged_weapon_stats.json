@@ -1,0 +1,11 @@
+{
+  "values": {
+    "verox_bows_daggers:recurve_bow": {
+      "draw_speed": 1.1
+    },
+    "verox_bows_daggers:longbow": {
+      "draw_speed": 0.75,
+      "projectile_speed": 1.25
+    }
+  }
+}

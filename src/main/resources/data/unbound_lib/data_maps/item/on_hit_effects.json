@@ -1,0 +1,9 @@
+{
+  "values": {
+    "minecraft:iron_sword": {
+      "effects": [
+        { "effect": "unbound_lib:bleeding", "trigger": "backstab", "duration": 100, "stacks": 2, "max_stacks": 10 }
+      ]
+    }
+  }
+}

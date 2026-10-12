@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:item/bow",
+  "overrides": [
+    {
+      "model": "verox_bows_daggers:item/longbow_pulling_0",
+      "predicate": {
+        "minecraft:pull": 0.0,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "verox_bows_daggers:item/longbow_pulling_1",
+      "predicate": {
+        "minecraft:pull": 0.65,
+        "minecraft:pulling": 1.0
+      }
+    },
+    {
+      "model": "verox_bows_daggers:item/longbow_pulling_2",
+      "predicate": {
+        "minecraft:pull": 0.9,
+        "minecraft:pulling": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "minecraft:item/bow"
+  }
+}

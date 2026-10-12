@@ -1,0 +1,268 @@
+{
+  "values": {
+    "verox_bows_daggers:string_tensioner": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/marksman",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:draw_speed",
+          "amount": 0.15,
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "unbound_lib:marksman_power",
+          "amount": 0.05,
+          "slot": "mainhand"
+        }
+      ],
+      "conflicts_with": [
+        "minecraft:quick_charge"
+      ]
+    },
+    "verox_bows_daggers:aerodynamic_fletching": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/marksman",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:projectile_speed",
+          "amount": 0.2,
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "unbound_lib:marksman_power",
+          "amount": 0.05,
+          "slot": "mainhand"
+        }
+      ]
+    },
+    "verox_bows_daggers:focus_lens": {
+      "kind": "charged",
+      "applies_to": "#unbound_lib:class_weapons/marksman",
+      "max_charges": 100,
+      "charges_per_refill": 25,
+      "refill": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "on_hit": [
+        {
+          "effect": "unbound_lib:focus",
+          "trigger": "hit",
+          "duration": 100,
+          "max_stacks": 3,
+          "self": true
+        }
+      ]
+    },
+    "verox_bows_daggers:copper_thorn_tip": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/marksman",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:pierce",
+          "amount": 1.0,
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "unbound_lib:armor_penetration",
+          "amount": 0.1,
+          "slot": "mainhand"
+        }
+      ],
+      "conflicts_with": [
+        "minecraft:piercing"
+      ]
+    },
+    "verox_bows_daggers:quiver_strap": {
+      "kind": "stat",
+      "applies_to": "#minecraft:chest_armor",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:ammo_save",
+          "amount": 0.2,
+          "slot": "armor"
+        },
+        {
+          "attribute": "unbound_lib:marksman_power",
+          "amount": 0.05,
+          "slot": "armor"
+        }
+      ]
+    },
+    "verox_bows_daggers:runners_gaiters": {
+      "kind": "stat",
+      "applies_to": "#minecraft:leg_armor",
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": 0.05,
+          "operation": "add_multiplied_base",
+          "slot": "armor"
+        },
+        {
+          "attribute": "unbound_lib:draw_speed",
+          "amount": 0.05,
+          "slot": "armor"
+        }
+      ]
+    },
+    "verox_bows_daggers:heavy_ballista_string": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/marksman",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:ranged_damage_multiplier",
+          "amount": 0.2,
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "unbound_lib:draw_speed",
+          "amount": -0.15,
+          "slot": "mainhand"
+        }
+      ]
+    },
+    "verox_bows_daggers:falcon_eye_sight": {
+      "kind": "stat",
+      "applies_to": "#minecraft:head_armor",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:projectile_speed",
+          "amount": 0.2,
+          "slot": "armor"
+        },
+        {
+          "attribute": "unbound_lib:crit_chance",
+          "amount": 0.1,
+          "slot": "armor"
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": -0.05,
+          "operation": "add_multiplied_base",
+          "slot": "armor"
+        }
+      ]
+    },
+    "verox_bows_daggers:shadowblade_hone": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/assassin",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:backstab_damage",
+          "amount": 0.25,
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "unbound_lib:assassin_power",
+          "amount": 0.05,
+          "slot": "mainhand"
+        }
+      ]
+    },
+    "verox_bows_daggers:bloodletting_groove": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/assassin",
+      "on_hit": [
+        {
+          "effect": "unbound_lib:bleeding",
+          "trigger": "crit",
+          "duration": 80,
+          "max_stacks": 5
+        }
+      ]
+    },
+    "verox_bows_daggers:nightshade_coating": {
+      "kind": "charged",
+      "applies_to": "#unbound_lib:class_weapons/assassin",
+      "max_charges": 100,
+      "charges_per_refill": 25,
+      "refill": {
+        "item": "minecraft:fermented_spider_eye"
+      },
+      "on_hit": [
+        {
+          "effect": "unbound_lib:sundered",
+          "trigger": "backstab",
+          "duration": 80,
+          "stacks": 2,
+          "max_stacks": 4
+        },
+        {
+          "effect": "minecraft:speed",
+          "trigger": "backstab",
+          "duration": 40,
+          "self": true
+        }
+      ]
+    },
+    "verox_bows_daggers:poison_reservoir": {
+      "kind": "charged",
+      "applies_to": "#unbound_lib:class_weapons/assassin",
+      "max_charges": 100,
+      "charges_per_refill": 25,
+      "refill": {
+        "item": "minecraft:spider_eye"
+      },
+      "on_hit": [
+        {
+          "effect": "minecraft:poison",
+          "trigger": "hit",
+          "chance": 0.4,
+          "duration": 80
+        }
+      ]
+    },
+    "verox_bows_daggers:silent_tread": {
+      "kind": "stat",
+      "applies_to": "#minecraft:foot_armor",
+      "on_hit": [
+        {
+          "effect": "unbound_lib:stealth",
+          "trigger": "kill",
+          "duration": 60,
+          "self": true
+        }
+      ]
+    },
+    "verox_bows_daggers:glass_dagger_hone": {
+      "kind": "stat",
+      "applies_to": "#unbound_lib:class_weapons/assassin",
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:stealth_damage",
+          "amount": 0.4,
+          "slot": "mainhand"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "amount": -0.15,
+          "operation": "add_multiplied_total",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    "verox_bows_daggers:shadowrunner_lining": {
+      "kind": "stat",
+      "applies_to": "#minecraft:leg_armor",
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": 0.06,
+          "operation": "add_multiplied_base",
+          "slot": "armor"
+        },
+        {
+          "attribute": "unbound_lib:assassin_power",
+          "amount": 0.1,
+          "slot": "armor"
+        },
+        {
+          "attribute": "minecraft:generic.armor",
+          "amount": -0.1,
+          "operation": "add_multiplied_total",
+          "slot": "armor"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "values": {
+    "verox_bows_daggers:marksmans_armguard": {
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:marksman_power",
+          "amount": 0.1
+        },
+        {
+          "attribute": "unbound_lib:draw_speed",
+          "amount": 0.1
+        }
+      ]
+    },
+    "verox_bows_daggers:quiver_badge": {
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:ammo_save",
+          "amount": 0.15
+        },
+        {
+          "attribute": "unbound_lib:projectile_speed",
+          "amount": 0.1
+        }
+      ]
+    },
+    "verox_bows_daggers:precision_monocle": {
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:marksman_power",
+          "amount": 0.15
+        },
+        {
+          "attribute": "unbound_lib:crit_damage",
+          "amount": 0.15
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": -0.05,
+          "operation": "add_multiplied_base"
+        }
+      ]
+    },
+    "verox_bows_daggers:shadowveil_talisman": {
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:backstab_damage",
+          "amount": 0.15
+        },
+        {
+          "attribute": "unbound_lib:stealth_damage",
+          "amount": 0.15
+        }
+      ]
+    },
+    "verox_bows_daggers:band_of_silent_steps": {
+      "modifiers": [
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "amount": 0.05,
+          "operation": "add_multiplied_base"
+        },
+        {
+          "attribute": "unbound_lib:assassin_power",
+          "amount": 0.05
+        }
+      ]
+    },
+    "verox_bows_daggers:stranglers_noose": {
+      "modifiers": [
+        {
+          "attribute": "unbound_lib:backstab_damage",
+          "amount": 0.25
+        },
+        {
+          "attribute": "unbound_lib:assassin_power",
+          "amount": 0.1
+        },
+        {
+          "attribute": "minecraft:generic.max_health",
+          "amount": -4.0
+        }
+      ]
+    }
+  }
+}

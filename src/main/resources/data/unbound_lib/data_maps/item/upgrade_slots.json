@@ -1,0 +1,10 @@
+{
+  "values": {
+    "verox_bows_daggers:recurve_bow": {
+      "slots": 1
+    },
+    "verox_bows_daggers:longbow": {
+      "slots": 1
+    }
+  }
+}

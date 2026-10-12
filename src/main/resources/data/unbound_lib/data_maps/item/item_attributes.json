@@ -1,0 +1,25 @@
+{
+  "values": {
+    "minecraft:bow": {
+      "modifiers": [
+        { "attribute": "unbound_lib:ranged_damage", "amount": 2.0, "slot": "mainhand", "base": true }
+      ]
+    },
+    "minecraft:crossbow": {
+      "modifiers": [
+        { "attribute": "unbound_lib:ranged_damage", "amount": 3.0, "slot": "mainhand", "base": true },
+        { "attribute": "unbound_lib:projectile_speed", "amount": 0.2, "slot": "mainhand" }
+      ]
+    },
+    "verox_bows_daggers:recurve_bow": {
+      "modifiers": [
+        { "attribute": "unbound_lib:ranged_damage", "amount": 3.0, "slot": "mainhand", "base": true }
+      ]
+    },
+    "verox_bows_daggers:longbow": {
+      "modifiers": [
+        { "attribute": "unbound_lib:ranged_damage", "amount": 5.0, "slot": "mainhand", "base": true }
+      ]
+    }
+  }
+}
