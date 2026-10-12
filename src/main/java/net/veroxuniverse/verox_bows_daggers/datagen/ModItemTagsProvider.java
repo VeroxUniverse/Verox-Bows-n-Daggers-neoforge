@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -33,6 +34,12 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         for (ModCurioItems.Entry curio : ModCurioItems.entries()) {
             tag(curioSlot(curio.slot())).add(curio.item().get());
+        }
+
+        for (DeferredItem<SwordItem> blade : ModItems.blades()) {
+            tag(ItemTags.SWORDS).add(blade.get());
+            tag(LibItemTags.MELEE_WEAPONS).add(blade.get());
+            tag(LibItemTags.ASSASSIN_WEAPONS).add(blade.get());
         }
 
         for (DeferredItem<ArcherBowItem> bow : ModItems.bows()) {

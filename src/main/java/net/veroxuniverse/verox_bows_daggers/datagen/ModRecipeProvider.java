@@ -36,6 +36,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('W', ItemTags.LOGS).define('S', Items.STICK).define('X', Items.STRING)
                 .unlockedBy("has_string", has(Items.STRING)).save(output);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DAGGER.get())
+                .pattern(" I").pattern("L ")
+                .define('I', Items.IRON_INGOT).define('L', Items.LEATHER)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(output);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.TWIN_GLAIVE.get())
+                .pattern("I I").pattern(" S ").pattern("I I")
+                .define('I', Items.IRON_INGOT).define('S', Items.STICK)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(output);
+
         for (ModUpgradeItems.Entry upgrade : ModUpgradeItems.entries()) {
             ShapelessRecipeBuilder builder = ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, upgrade.item().get());
             for (ItemLike ingredient : upgrade.ingredients()) {

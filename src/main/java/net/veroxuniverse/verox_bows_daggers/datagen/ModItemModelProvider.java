@@ -12,6 +12,10 @@ import net.veroxuniverse.verox_bows_daggers.registry.ModItems;
 import net.veroxuniverse.verox_bows_daggers.registry.ModCurioItems;
 import net.veroxuniverse.verox_bows_daggers.registry.ModUpgradeItems;
 
+/**
+ * PLACEHOLDERS: the bows use the vanilla bow textures for now, including the three pulling stages.
+ * Once the real models exist, swap the textures here (or switch to GeckoLib for the 3D weapon models).
+ */
 public class ModItemModelProvider extends ItemModelProvider {
 
     private static final float[] PULL_STAGES = {0.0F, 0.65F, 0.9F};
@@ -24,6 +28,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         bowPlaceholder(ModItems.RECURVE_BOW);
         bowPlaceholder(ModItems.LONGBOW);
+        handheldPlaceholder(ModItems.DAGGER, "item/stone_sword");
+        handheldPlaceholder(ModItems.TWIN_GLAIVE, "item/netherite_sword");
 
         for (ModUpgradeItems.Entry upgrade : ModUpgradeItems.entries()) {
             withExistingParent(upgrade.item().getId().getPath(), mcLoc("item/generated"))
@@ -48,5 +54,9 @@ public class ModItemModelProvider extends ItemModelProvider {
                     .model(pulling)
                     .end();
         }
+    }
+
+    private void handheldPlaceholder(DeferredItem<? extends Item> item, String vanillaTexture) {
+        withExistingParent(item.getId().getPath(), mcLoc("item/handheld")).texture("layer0", mcLoc(vanillaTexture));
     }
 }

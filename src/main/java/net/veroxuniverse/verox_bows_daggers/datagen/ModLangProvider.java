@@ -19,6 +19,8 @@ public class ModLangProvider extends LanguageProvider {
 
         addItem(ModItems.RECURVE_BOW, "Recurve Bow");
         addItem(ModItems.LONGBOW, "Longbow");
+        addItem(ModItems.DAGGER, "Dagger");
+        addItem(ModItems.TWIN_GLAIVE, "Twin Glaive");
 
         for (ModUpgradeItems.Entry upgrade : ModUpgradeItems.entries()) {
             addItem(upgrade.item(), upgrade.name());

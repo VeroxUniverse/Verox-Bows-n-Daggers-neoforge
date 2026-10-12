@@ -5,6 +5,12 @@
     },
     "verox_bows_daggers:longbow": {
       "slots": 1
+    },
+    "verox_bows_daggers:dagger": {
+      "slots": 1
+    },
+    "verox_bows_daggers:twin_glaive": {
+      "slots": 1
     }
   }
 }
